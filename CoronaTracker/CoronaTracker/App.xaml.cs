@@ -1,13 +1,15 @@
-﻿using Xamarin.Forms;
+﻿using CoronaTracker.Services;
+using Xamarin.Forms;
 
 namespace CoronaTracker
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
+            
+            DependencyService.Register<CountriesService>();
 
             MainPage = new AppShell();
         }

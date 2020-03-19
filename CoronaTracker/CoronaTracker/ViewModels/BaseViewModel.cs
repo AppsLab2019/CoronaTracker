@@ -7,8 +7,6 @@ namespace CoronaTracker.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        //public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-
         bool isBusy;
         public bool IsBusy
         {
